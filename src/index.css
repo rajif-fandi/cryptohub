@@ -1,0 +1,79 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. */
+
+@layer base {
+  :root {
+    --background: 10 14 39;
+    --foreground: 248 250 252;
+
+    --card: 21 25 55;
+    --card-foreground: 248 250 252;
+
+    --popover: 21 25 55;
+    --popover-foreground: 248 250 252;
+
+    --primary: 37 99 235;
+    --primary-foreground: 248 250 252;
+
+    --secondary: 30 41 89;
+    --secondary-foreground: 248 250 252;
+
+    --muted: 30 41 89;
+    --muted-foreground: 148 163 184;
+
+    --accent: 124 58 237;
+    --accent-foreground: 248 250 252;
+
+    --destructive: 239 68 68;
+    --destructive-foreground: 248 250 252;
+
+    --border: 51 65 85;
+    --input: 51 65 85;
+    --ring: 37 99 235;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 10 14 39;
+    --sidebar-foreground: 248 250 252;
+    --sidebar-primary: 37 99 235;
+    --sidebar-primary-foreground: 248 250 252;
+    --sidebar-accent: 30 41 89;
+    --sidebar-accent-foreground: 248 250 252;
+    --sidebar-border: 51 65 85;
+    --sidebar-ring: 37 99 235;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-crypto-bg-primary text-foreground font-inter;
+    background: linear-gradient(135deg, #0A0E27 0%, #151937 50%, #1E293B 100%);
+    min-height: 100vh;
+  }
+}
+
+@layer components {
+  .crypto-card {
+    @apply bg-gradient-to-br from-slate-800/50 to-slate-900/50 backdrop-blur-sm border border-slate-700/50 rounded-xl p-6 hover:border-slate-600/50 transition-all duration-300;
+  }
+  
+  .price-positive {
+    @apply text-crypto-success;
+  }
+  
+  .price-negative {
+    @apply text-crypto-danger;
+  }
+  
+  .crypto-badge {
+    @apply bg-gradient-to-r from-crypto-accent-blue to-crypto-accent-purple text-white px-3 py-1 rounded-full text-sm font-medium;
+  }
+}
