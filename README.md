@@ -14,8 +14,8 @@ Aplikasi web CryptoHub adalah platform interaktif yang memungkinkan pengguna unt
 - **Halaman Trending**: Menampilkan daftar koin yang sedang trending atau populer.
 - **Halaman Detail Koin**: Menyediakan informasi mendalam tentang setiap cryptocurrency, termasuk statistik pasar, deskripsi, dan tautan ke situs web resmi.
 - **Sistem Otentikasi Pengguna**:
-    - **Registrasi**: Pengguna dapat membuat akun baru.
-    - **Login**: Pengguna dapat masuk ke akun mereka.
+    - **Registrasi**: Pengguna dapat membuat akun baru dan akun yang sudah di registrasi langsung ke login sendiri tanpa harus login lagi
+    - **Login**: otomatis masuk disaat registrasi
     - **Logout**: Pengguna dapat keluar dari sesi mereka.
     - (Catatan: Untuk proyek ini, sistem otentikasi disimulasikan menggunakan `localStorage` untuk kemudahan demonstrasi tanpa memerlukan backend nyata.)
 - **Watchlist (Daftar Pantauan)**:
